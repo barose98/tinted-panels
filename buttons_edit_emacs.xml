@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<subpanel category="emacs">
+<items>
+  <button brief="P">
+    <name>ctlc</name>
+    <category>panel</category>
+<icon>/usr/share/icons/HighContrast/scalable/actions/edit-copy.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers alt+w' </command>
+  </button>
+  <button brief="P">
+    <name>ctlx</name>
+    <category>panel</category>
+<icon>/usr/share/icons/HighContrast/scalable/actions/edit-cut.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+w' </command>
+  </button>
+  <button brief="P">
+    <name>ctlv</name>
+    <category>panel</category>
+<icon>/usr/share/icons/HighContrast/scalable/actions/edit-paste.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+y' </command>
+  </button>
+  <button brief="P">
+    <name>dl</name>
+    <category>panel</category>
+<icon>/usr/share/icons/HighContrast/scalable/actions/object-rotate-right.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+a ctrl+k ctrl+y Return ctrl+y Return'</command>
+  </button>
+  <button brief="P">
+    <name>undo</name>
+    <category>panel</category>
+<!--  <display>c/</display>-->
+  <icon>/usr/share/icons/HighContrast/scalable/actions/document-revert.svg</icon> 
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+0x002f'</command>
+  </button>
+
+</items>
+</subpanel>

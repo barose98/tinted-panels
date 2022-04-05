@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+dir=".rc"
+[[ -d $dir ]] || mkdir $dir
+xalan  -in "panel_$1.xml" -xsl "create_tint2_panel.xslt" -out "$dir/tint2_$1.rc"
+echo "${dir}/"
+

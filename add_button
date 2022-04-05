@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+echo $0
+[[ -z $1 ]] && FILE=$(zenity --file-selection --filename=$(pwd) --file-filter="NAME | *.xml"  )
+[[ -n $1 ]] && FILE="$1"
+[[ -f $FILE ]] && echo $FILE || exit
+read -p "Name: " NAME
+read -p "Key: " KEY
+NEW="${FILE%.xml}_new.xml"
+xalan  -param name "'$NAME'" -param key "'$KEY'" -in "$FILE" -xsl "add_button.xslt" -out "$NEW"
+
+

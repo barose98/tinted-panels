@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE doc [
+<!ENTITY emojiFile SYSTEM "/home/roseba/Projects/MEDIA/ICONS/EMOJ/EMOJI-BASH/emoji_buttons.xml">
+]>
+<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40" vside="center" hside="right" orient="vertical">
+&emojiFile;
+</panel>

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+killall tint2
+
+./create-tint2-panel bottomcenter
+tint2 -c ./tint2bottomcenter.rc &
+
+
+exit 0

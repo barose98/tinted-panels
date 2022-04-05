@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+<category name="panel" type="Panel" back="Navy" fore="Navy"/>
+<category name="emoji" type="Button" back="Navy" fore="White" font="Sans 24"/>
+<category name="other" type="Button" back="Orange" fore="Navy"  font="Open Sans Condensed 28"/>
+<category name="key" type="Button" back="Green" fore="White" font="Open Sans Condensed 28"/>
+<category name="roku" type="Button" back="DarkBlue" fore="White" font="Sans 28"/>
+<category name="roku-launch" type="Button" back="Purple" fore="White" font="Sans 16"/>
+<category name="click" type="Button" back="DarkOliveGreen" fore="White" font="Sans 16"/>
+<category name="window" type="Button" back="Green" fore="White" font="Sans 16"/>
+<category name="edit" type="Button" back="Maroon" fore="White"  font="Open Sans Condensed 28"/>
+<category name="emacs" type="Button" back="Red" fore="White"  font="Open Sans Condensed 16"/>
+<category name="openttd" type="Button" back="Red" fore="White"  font="Open Sans Condensed 16"/>
+<category name="shell" type="Button" back="DarkGreen" fore="White" font="Sans 16"/>
+<category name="task" type="Active Task" back="Orange" fore="Navy"  font="Open Sans Condensed 28"/>
+<category name="task" type="Urgent Task" back="Red" fore="Navy" font="Sans 16"/>
+</categories>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<subpanel>
+<items>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>TY</display>
+    <command>bash -c "xdotool type 'THANK YOU'"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>Ty</display>
+    <command>bash -c "xdotool type 'Thank You '"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>T</display>
+    <command>bash -c "xdotool type 'Thanks '"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>c</display>
+    <command>bash -c "xdotool type ', '"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>p</display>
+    <command>bash -c "xdotool type '. '"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>b</display>
+    <command>bash -c "xdotool type 'buddy'"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>s</display>
+    <command>bash -c "xdotool type 'sir'"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>D</display>
+    <command>bash -c "xdotool type 'I did have a pretty great day. '"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>w</display>
+    <command>bash -c "xdotool type 'I hope you are well. '"</command>
+  </button>
+  <button brief="P">
+    <name>TY</name>
+    <category>key</category>
+    <display>gw</display>
+    <command>bash -c "xdotool type 'I hope you guys are well. '"</command>
+  </button>
+</items>
+</subpanel>

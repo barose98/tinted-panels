@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<subpanel>
+<items>
+  <button brief="P">
+    <name>xmlcom</name>
+    <category>edit</category>
+    <display>&lt;!-</display>
+    <command>bash -c 'xdotool key --clearmodifiers Home less exclam minus minus End minus minus greater '</command>
+    
+  </button>
+
+</items>
+</subpanel>
