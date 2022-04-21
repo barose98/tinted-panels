@@ -5,7 +5,6 @@
 <!ENTITY BASH "/home/roseba/Projects/SOFT/BASH">
 <!ENTITY PANELDIR "tinted-panels" >
 <!ENTITY SEPARATOR "<subpanel><items><separator brief=':'><size>15</size><style>empty</style></separator></items></subpanel>" >
-<!ENTITY tvmodeFile SYSTEM "buttons_tvmode.xml">
 <!ENTITY ROKU_DX SYSTEM "/home/roseba/Projects/SOFT/BASH/Rokontroller/roku_buttons_dx.xml">
 <!ENTITY KEYS SYSTEM "buttons_keys.xml" >
 <!ENTITY CURSOR SYSTEM "buttons_cursor.xml" >
@@ -15,48 +14,7 @@
 <!ENTITY FILE SYSTEM "buttons_file.xml" >
 ]>
 <panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40" vside="top" hside="center" orient="horizontal">
-<subpanel>
-<items>
-  <button brief="P">
-    <name>rightclick</name>
-    <category>panel</category>
-    <icon>&ICONS;/input-mouse-right.svg</icon>
-    <command>bash -c "&BASH;/clicking right"</command>
-  </button>
-  <button brief="P">
-    <name>email</name>
-    <category>panel</category>
-    <icon>&CONTRAST;/emblems/emblem-mail.svg</icon>
-    <command>bash -c "xdotool type barrett.rose@gmail.com"</command>
-  </button>
-</items>
-</subpanel>
-&SEPARATOR;
-&WINDOW;
 
 &ROKU_DX;
-&SEPARATOR;
 
-&KEYS;
-&SEPARATOR;
-
-&CURSOR;
-&SEPARATOR;
-
-&TERMINAL;
-&SEPARATOR;
-
-&EDIT;
-&FILE;
-<subpanel category="key">
-<items>
-  <button brief="P">
-    <name>esc</name>
-    <category>panel</category>
-    <icon>&CONTRAST;/actions/application-exit.svg</icon>
-    <command>bash -c 'xdotool key -clearmodifiers Escape' </command>
-  </button>
-
-</items>
-</subpanel>
 </panel>

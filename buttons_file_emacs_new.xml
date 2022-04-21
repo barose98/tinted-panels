@@ -1,54 +1,47 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--
-<!DOCTYPE doc [
-<!ENTITY CONTRAST "/usr/share/icons/HighContrast/scalable">
-]>
--->
+<?xml version="1.0" encoding="UTF-8"?>
 <subpanel category="emacs">
 <items>
-  <button brief="P">
+<button brief="P">
     <name>ctls</name>
     <category>panel</category>
-    <icon>&CONTRAST;/actions/document-save.svg</icon>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/document-save.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+x ctrl+s' </command>
   </button>
-  <button brief="P">
+<button brief="P">
     <name>cu</name>
     <category>panel</category>
     <display>cu</display>
     <command>bash -c 'xdotool key -clearmodifiers ctrl+u' </command>
   </button>
-  <button brief="P">
+<button brief="P">
     <name>mxx</name>
     <category>panel</category>
     <display>mx</display>
     <command>bash -c 'xdotool key -clearmodifiers alt+x' </command>
   </button>
-  <button brief="P">
+<button brief="P">
     <name>cx</name>
     <category>panel</category>
     <display>cx</display>
     <command>bash -c 'xdotool key -clearmodifiers ctrl+x' </command>
   </button>
-  <button brief="P">
+<button brief="P">
     <name>cg</name>
     <category>panel</category>
     <display>cg</display>
     <command>bash -c 'xdotool key -clearmodifiers ctrl+g' </command>
   </button>
-  <button brief="P">
-<name>cxd</name>
-<category>panel</category>
-<!--<display>cxd</display>-->
-    <icon>&CONTRAST;/places/folder.svg</icon>
-<command>bash -c 'xdotool key --clearmodifiers ctrl+x d' </command>
-</button>
-
-  <button brief="P">
+<button brief="P">
     <name>exit</name>
     <category>panel</category>
-    <icon>&CONTRAST;/actions/application-exit.svg</icon>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/application-exit.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+x ctrl+c' </command>
   </button>
+<button brief="P">
+<name>cxd</name>
+<category>panel</category>
+<display>cxd</display>
+<command>bash -c 'xdotool key --clearmodifiers ctrl+x d' </command>
+</button>
 </items>
 </subpanel>

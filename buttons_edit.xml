@@ -4,26 +4,26 @@
   <button brief="P">
     <name>ctlc</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/edit-copy.svg</icon>
+<icon>&CONTRAST;/actions/edit-copy.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+c' </command>
   </button>
   <button brief="P">
     <name>ctlx</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/edit-cut.svg</icon>
+<icon>&CONTRAST;/actions/edit-cut.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+x' </command>
   </button>
   <button brief="P">
     <name>ctlv</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/edit-paste.svg</icon>
+<icon>&CONTRAST;/actions/edit-paste.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+v' </command>
   </button>
   <button brief="P">
     <name>dl</name>
     <category>panel</category>
 <!--    <display>DL</display>-->
-<icon>/usr/share/icons/HighContrast/scalable/actions/object-rotate-right.svg</icon>
+<icon>&CONTRAST;/actions/object-rotate-right.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers Home shift+End ctrl+c End Return ctrl+v'</command>
   </button>
 

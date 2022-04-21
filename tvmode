@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#xdotool key 0xffec+d #super_r
+kills=0
+ps aux |grep tint2_ |awk '{print $2 " " $11 " "  $13 }' >ps
+   
+while read line;do
+    la=( $(echo $line) )
+    if [[ ${#la[@]} -eq 3 ]] ;then
+	panel=${la[2]} && panel=${panel#*_} && panel=${panel::-3}
+	procname=${la[1]}
+	pid=${la[0]}
+	
+        if [[ $panel == "roku" ]] ;then
+	    echo $panel skipped # >>tvlog
+	else 
+	    #kill
+	    kill $pid
+	    ((kills++))
+	fi
+    fi
+done <  ps
+#rm ps
+
+[[ $kills -gt 0 ]] && exit
+
+./toggle_tint2 main
+./toggle_tint2 top
+
+

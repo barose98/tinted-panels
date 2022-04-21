@@ -7,13 +7,16 @@
 <!ENTITY birthdayFile SYSTEM "buttons_birthday.xml">
 <!ENTITY ttdFile SYSTEM "buttons_openttd.xml">
 <!ENTITY ECURSOR SYSTEM "buttons_cursor_emacs.xml" >
+<!ENTITY XML_PANEL SYSTEM "buttons_xml.xml" >
 <!ENTITY EEDIT SYSTEM "buttons_edit_emacs.xml" >
+
 <!ENTITY EFILE SYSTEM "buttons_file_emacs.xml" >
 ]>
-<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40"  vside="center" hside="left" orient="vertical">
+<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 48"  vside="center" hside="left" orient="vertical">
   <position>centerleft</position>
 &ECURSOR;
 &EEDIT;
+&XML_PANEL;
 &EFILE;
 <!--&ttdFile;-->
 <!--&birthdayFile;-->

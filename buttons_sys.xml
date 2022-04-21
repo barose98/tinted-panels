@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<subpanel category="panel">
+<items>
+<button brief="P">
+   <name></name>
+   <category>panel</category>
+   <display></display>
+   <!--   <icon>emacs</icon>-->
+<icon>&CONTRAST;/apps/accessories-text-editor.svg</icon>
+   
+   <command>cd &BASH;/&PANELDIR;/ &amp;&amp; ./toggle_tint2 emacs &amp;</command>
+</button>
+
+<button brief="P">
+    <name>rokontroller</name>
+    <category>panel</category>
+<!--   <icon>&CONTRAST;/apps/accessories-text-editor.svg</icon>-->
+<icon>&ICONS;/remote.svg</icon>
+   <command>cd &BASH;/&PANELDIR;/ &amp;&amp; ./toggle_tint2 roku</command>
+  </button>
+<button brief="P">
+   <name>U1F642</name>
+   <annotation>slightly smiling face</annotation>
+   <category>emoji</category>
+<icon>/usr/share/icons/HighContrast/48x48/emotes/face-plain.png</icon>
+   <command>cd &BASH;/&PANELDIR;/ &amp;&amp; ./toggle_tint2 emoji &amp;</command>
+</button>
+<button brief="P">
+   <name></name>
+   <category>emoji</category>
+   <display></display>
+   <icon>&ICONS;/1F4CC.svg</icon>
+   <command>cd &BASH;/&PANELDIR;  &amp;&amp; ./toggle_tint2 top </command>
+</button>
+<button brief="P">
+   <name></name>
+   <category>panel</category>
+   <display></display>
+   <icon>&CONTRAST;/devices/network-wireless.svg</icon>
+   <command>lxterminal -e 'nmtui'</command>
+</button>
+<button brief="P">
+   <name></name>
+   <category>emoji</category>
+   <display></display>
+   <icon>&ICONS;/1F4C8.svg</icon>
+   <command>&BASH;/stat</command>
+</button>
+<button brief="P">
+   <name>RVUP</name>
+   <category>panel</category>
+   <icon>&CONTRAST;/status/audio-volume-muted.svg</icon>
+   <command>bash -c 'amixer -D pulse set Master 1+ toggle' &amp;&amp; zenity --notification --text 'Toggling sound.' </command>
+</button>
+
+</items>
+</subpanel>

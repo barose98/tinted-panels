@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<subpanel category="panel">
+<items>
+
+<button brief="P">
+   <name></name>
+   <category>panel</category>
+   <display></display>
+   <icon>&CONTRAST;/apps/utilities-terminal.svg</icon>
+   <command>lxterminal --working-directory="/home/roseba"</command>
+</button>
+<button brief="P">
+   <name>pcm</name>
+   <category>panel</category>
+   <display></display>
+   <icon>&CONTRAST;/apps/system-file-manager.svg</icon>
+   <command>pcmanfm ~</command>
+</button>
+
+<button brief="P">
+   <name></name>
+   <category>panel</category>
+   <display></display>
+   <icon>firefox</icon>
+   <command>xdg-open https://mail.google.com/mail/?ui=html</command>
+</button>
+
+
+</items>
+</subpanel>

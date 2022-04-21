@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-killall tint2
-
-./create-tint2-panel bottomcenter
-tint2 -c ./tint2bottomcenter.rc &
-
+pkill -f tint2_
+./toggle_tint2 main
+./toggle_tint2 top
 
 exit 0

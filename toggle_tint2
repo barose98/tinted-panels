@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-pkill -f tint2_${1}.rc
-[[ $? -ne 0  ]] && tint2 -c "./$(./create-tint2-panel $1 )tint2_${1}.rc" &
+[[ -n $2 ]] && ./create-tint2-panel ${1:-main}
+p=${1:-main}
+pkill -f tint2_${p}.rc
+[[ $? -ne 0  ]] && tint2 -c "./.rc/tint2_${p}.rc" &
 

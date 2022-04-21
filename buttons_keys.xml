@@ -125,7 +125,7 @@
   <button brief="P">
     <name>enter</name>
     <category>key</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/dialog-ok.svg</icon>
+<icon>&CONTRAST;/actions/dialog-ok.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers Return' </command>
   </button>
 

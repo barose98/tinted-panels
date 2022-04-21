@@ -8,4 +8,6 @@ read -p "Key: " KEY
 NEW="${FILE%.xml}_new.xml"
 xalan  -param name "'$NAME'" -param key "'$KEY'" -in "$FILE" -xsl "add_button.xslt" -out "$NEW"
 
+mv $NEW $FILE
+
 

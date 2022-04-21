@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE doc [
+<!ENTITY CONTRAST "/usr/share/icons/HighContrast/scalable">
 <!ENTITY ICONS "/home/roseba/Projects/MEDIA/ICONS">
 <!ENTITY BASH "/home/roseba/Projects/SOFT/BASH">
 <!ENTITY PANELDIR "tinted-panels" >
+<!ENTITY sys_file SYSTEM "buttons_sys.xml" >
+<!ENTITY launch_file SYSTEM "buttons_launch.xml" >
 ]>
 <panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="97% 50" vside="bottom" hside="center" orient="horizontal">
 <subpanel >
@@ -21,89 +24,24 @@
    <icon>/home/roseba/Projects/RoseMandala2.svg</icon>
    <command>xdotool key --clearmodifiers Super_L+6</command>
 </button>
-<button brief="P">
-   <name></name>
-   <category>panel</category>
-   <display></display>
-   <icon>/usr/share/icons/HighContrast/scalable/apps/utilities-terminal.svg</icon>
-   <command>lxterminal --working-directory="/home/roseba"</command>
-</button>
-<button brief="P">
-   <name>pcm</name>
-   <category>panel</category>
-   <display></display>
-   <icon>/usr/share/icons/HighContrast/scalable/apps/system-file-manager.svg</icon>
-   <command>pcmanfm ~</command>
-</button>
-
-<button brief="P">
-   <name></name>
-   <category>panel</category>
-   <display></display>
-   <icon>firefox</icon>
-   <command>xdg-open https://mail.google.com/mail/?ui=html</command>
-</button>
-<!--
-<button brief="P">
-   <name></name>
-   <category>panel</category>
-   <display></display>
-   <icon>/usr/share/icons/HighContrast/scalable/emblems/emblem-mail.svg</icon>
-   <command>lxterminal -geometry=200x50  -e 'mutt'</command>
-</button>
--->
+</items>
+</subpanel>
+&launch_file;
+<subpanel>
+  <items>
 <launcher brief="L"/>
+<button brief="P">
+   <name>ic</name>
+   <category>panel</category>
+   <icon>&CONTRAST;/actions/go-bottom.svg</icon>
+   <command>xdotool key --clearmodifiers 0xffec+d </command>
+</button>
 <taskbar brief="T"/>
-
-<button brief="P">
-   <name></name>
-   <category>panel</category>
-   <display></display>
-   <icon>/usr/share/icons/HighContrast/scalable/apps/accessories-text-editor.svg</icon>
-   <command>cd &BASH;/&PANELDIR;/ &amp;&amp; ./toggle_tint2 emacs</command>
-</button>
-
-<button brief="P">
-    <name>rokontroller</name>
-    <category>panel</category>
-<!--   <icon>/usr/share/icons/HighContrast/scalable/apps/accessories-text-editor.svg</icon>-->
-<icon>/home/roseba/Projects/MEDIA/ICONS/remote.svg</icon>
-   <command>cd &BASH;/&PANELDIR;/ &amp;&amp; ./toggle_tint2 roku</command>
-  </button>
-<button brief="P">
-   <name>U1F642</name>
-   <annotation>slightly smiling face</annotation>
-   <category>emoji</category>
-<icon>/usr/share/icons/HighContrast/48x48/emotes/face-plain.png</icon>
-   <command>cd &BASH;/&PANELDIR;/ &amp;&amp; ./toggle_tint2 emoji</command>
-</button>
-<button brief="P">
-   <name></name>
-   <category>emoji</category>
-   <display></display>
-   <icon>&ICONS;/1F4CC.svg</icon>
-   <command>cd &BASH;/&PANELDIR;  &amp;&amp; ./toggle_tint2 top </command>
-</button>
-<button brief="P">
-   <name></name>
-   <category>panel</category>
-   <display></display>
-   <icon>/usr/share/icons/HighContrast/scalable/devices/network-wireless.svg</icon>
-   <command>lxterminal -e 'nmtui'</command>
-</button>
-<button brief="P">
-   <name></name>
-   <category>emoji</category>
-   <display></display>
-   <icon>&ICONS;/1F4C8.svg</icon>
-   <command>&BASH;/stat</command>
-</button>
-<button brief="P">
-   <name>RVUP</name>
-   <category>panel</category>
-   <icon>/usr/share/icons/HighContrast/scalable/status/audio-volume-muted.svg</icon>
-   <command>bash -c 'amixer -D pulse set Master 1+ toggle' &amp;&amp; zenity --notification --text 'Toggling sound.' </command>
-</button>
+</items>
+</subpanel>
+&sys_file;
+<subpanel>
+  <items>
 <systray brief="SC"/>
 </items>
 </subpanel>
