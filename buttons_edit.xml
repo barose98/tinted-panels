@@ -19,13 +19,13 @@
 <icon>&CONTRAST;/actions/edit-paste.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+v' </command>
   </button>
-  <button brief="P">
+<!--  <button brief="P">
     <name>dl</name>
     <category>panel</category>
-<!--    <display>DL</display>-->
-<icon>&CONTRAST;/actions/object-rotate-right.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers Home shift+End ctrl+c End Return ctrl+v'</command>
-  </button>
 
+<icon>&CONTRAST;/actions/object-rotate-right.svg</icon>
+    <command>bash -c 'xdotool key -clearmodifiers Home shift+End ctrl+c End Return ctrl+v'</command>
+  </button>
+-->
 </items>
 </subpanel>

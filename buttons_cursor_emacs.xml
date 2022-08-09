@@ -5,7 +5,6 @@
     <name>csp</name>
     <category>panel</category>
     <display>cSp</display>
-<!-- <icon>/usr/share/icons/HighContrast/scalable/actions/go-first.svg</icon> -->
     <command>bash -c 'xdotool key --clearmodifiers ctrl+space' </command>
   </button>
 <button brief="P">
@@ -19,11 +18,12 @@
     <category>panel</category>
     <display>mf</display>
     <command>bash -c 'xdotool key --clearmodifiers alt+f' </command>
-  </button>
+</button>
+
 <button brief="P">
     <name>hom</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/go-first.svg</icon>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-first.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+a' </command>
   </button>
 <button brief="P">

@@ -16,5 +16,10 @@
 <panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40" vside="top" hside="center" orient="horizontal">
 
 &ROKU_DX;
+<subpanel>
+  <items>
+    <clock brief="C"/>
+  </items>
+</subpanel>
 
 </panel>

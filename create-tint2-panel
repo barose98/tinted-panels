@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 dir=".rc"
 [[ -d $dir ]] || mkdir $dir
-xalan  -in "panel_$1.xml" -xsl "create_tint2_panel.xslt" -out "$dir/tint2_$1.rc"
-echo "${dir}/"
+panels=( )
+panels=( "Panel:" $(for p in panel_*; do p=${p##*_};p=${p%.*};echo -n " " $p;done ) )
+
+[[ -z $1 ]] && panel=$(zenity --entry --text  "${panels[@]}" --entry-text "") || panel=$1
+panelrc="$dir/tint2_${panel}.rc"
+[[ -z $panel ]] && zenity --error
+[[ -n $panel ]] &&    xalan  -in "panel_$panel.xml" -xsl "create-tint2-panel.xslt" -out "$panelrc" 
+zenity --info  --timeout=2 --text "$panelrc"
 

@@ -56,7 +56,7 @@
     <icon>&CONTRAST;/actions/application-exit.svg</icon>
     <command>bash -c 'xdotool key -clearmodifiers Escape' </command>
   </button>
-
+<!--<systray brief="S"/>-->
 </items>
 </subpanel>
 </panel>

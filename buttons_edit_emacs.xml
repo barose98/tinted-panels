@@ -23,13 +23,12 @@
     <name>dl</name>
     <category>panel</category>
 <icon>/usr/share/icons/HighContrast/scalable/actions/object-rotate-right.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers ctrl+a ctrl+k ctrl+y Return ctrl+y Return'</command>
+<command>bash -c 'xdotool key --clearmodifiers F5'</command>
   </button>
   <button brief="P">
     <name>undo</name>
     <category>panel</category>
-<!--  <display>c/</display>-->
-  <icon>/usr/share/icons/HighContrast/scalable/actions/document-revert.svg</icon> 
+    <icon>/usr/share/icons/HighContrast/scalable/actions/document-revert.svg</icon> 
     <command>bash -c 'xdotool key --clearmodifiers ctrl+0x002f'</command>
   </button>
 

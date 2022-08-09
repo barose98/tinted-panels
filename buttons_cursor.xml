@@ -17,25 +17,25 @@
     <name>hom</name>
     <category>panel</category>
 <icon>&CONTRAST;/actions/go-top.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers Home' </command>
+    <command>bash -c 'xdotool key --clearmodifiers Page_Up' </command>
   </button>
   <button brief="P">
     <name>pup</name>
     <category>panel</category>
 <icon>&CONTRAST;/actions/go-up.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers Page_Up' </command>
+    <command>bash -c 'xdotool key --clearmodifiers Up' </command>
   </button>
   <button brief="P">
     <name>pdn</name>
     <category>panel</category>
 <icon>&CONTRAST;/actions/go-down.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers Page_Down' </command>
+    <command>bash -c 'xdotool key --clearmodifiers Down' </command>
   </button>
   <button brief="P">
     <name>end</name>
     <category>panel</category>
 <icon>&CONTRAST;/actions/go-bottom.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers End' </command>
+    <command>bash -c 'xdotool key --clearmodifiers Page_Down' </command>
   </button>
 
 

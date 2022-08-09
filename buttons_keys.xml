@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <subpanel category="key">
-<items>
+  <items>
+    
+  <button brief="P">
+    <name>this</name>
+    <category>key</category>
+    <display>t</display>
+    <command>bash -c "xdotool type 'this-&gt;'"</command>
+  </button>
   <button brief="P">
     <name>lcb</name>
     <category>key</category>

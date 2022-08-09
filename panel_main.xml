@@ -42,7 +42,8 @@
 &sys_file;
 <subpanel>
   <items>
-<systray brief="SC"/>
-</items>
+    <systray brief="S"/>
+    <clock brief="C"/>    
+  </items>
 </subpanel>
 </panel>
