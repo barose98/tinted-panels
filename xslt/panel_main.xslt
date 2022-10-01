@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE doc [
-<!ENTITY CONTRAST "/usr/share/icons/HighContrast/scalable">
-<!ENTITY ICONS "/home/roseba/Projects/MEDIA/ICONS">
-<!ENTITY BASH "/home/roseba/Projects/SOFT/BASH">
-<!ENTITY PANELDIR "tinted-panels" >
-<!ENTITY sys_file SYSTEM "buttons_sys.xml" >
-<!ENTITY launch_file SYSTEM "buttons_launch.xml" >
-]>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+<!--<xsl:param name="PROJECTS"/>-->
+<xsl:include href="variables.xslt"/>
+  <xsl:template match="/">
 <panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="97% 50" vside="bottom" hside="center" orient="horizontal">
 <subpanel >
 <items>
@@ -21,25 +17,25 @@
    <name></name>
    <category>panel</category>
    <display></display>
-   <icon>/home/roseba/Projects/RoseMandala2.svg</icon>
+   <icon><xsl:value-of select="$PROJECTS"/>/RoseMandala2.svg</icon>
    <command>xdotool key --clearmodifiers Super_L+6</command>
 </button>
 </items>
 </subpanel>
-&launch_file;
+<xsl:call-template name="buttons_launch"/>
 <subpanel>
   <items>
 <launcher brief="L"/>
 <button brief="P">
    <name>ic</name>
    <category>panel</category>
-   <icon>&CONTRAST;/actions/go-bottom.svg</icon>
+   <icon><xsl:value-of select="$CONTRAST"/>/actions/go-bottom.svg</icon>
    <command>xdotool key --clearmodifiers 0xffec+d </command>
 </button>
 <taskbar brief="T"/>
 </items>
 </subpanel>
-&sys_file;
+<xsl:call-template name="buttons_sys"/>
 <subpanel>
   <items>
     <systray brief="S"/>
@@ -47,3 +43,5 @@
   </items>
 </subpanel>
 </panel>
+  </xsl:template>
+</xsl:stylesheet>

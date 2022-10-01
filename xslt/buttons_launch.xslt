@@ -1,19 +1,20 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+<xsl:template name="buttons_launch">
 <subpanel category="panel">
 <items>
-
 <button brief="P">
    <name></name>
    <category>panel</category>
    <display></display>
-   <icon>&CONTRAST;/apps/utilities-terminal.svg</icon>
+   <icon><xsl:value-of select="$CONTRAST"/>/apps/utilities-terminal.svg</icon>
    <command>lxterminal --working-directory="/home/roseba"</command>
 </button>
 <button brief="P">
    <name>pcm</name>
    <category>panel</category>
    <display></display>
-   <icon>&CONTRAST;/apps/system-file-manager.svg</icon>
+   <icon><xsl:value-of select="$CONTRAST"/>/apps/system-file-manager.svg</icon>
    <command>pcmanfm ~</command>
 </button>
 
@@ -24,7 +25,10 @@
    <icon>firefox</icon>
    <command>xdg-open https://mail.google.com/mail/?ui=html</command>
 </button>
-
-
 </items>
 </subpanel>
+</xsl:template>
+
+ </xsl:stylesheet>
+
+

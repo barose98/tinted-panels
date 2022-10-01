@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="97% 40" vside="top" hside="center" orient="horizontal">
+ <subpanel>
+  <items>
+   <button brief="P">
+    <name>dxp</name>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/list-add.svg</icon>
+    <command>cd /home/roseba/Projects/SOFT/BASH/tinted-panels$amp;$amp; ./toggle_tint2 top2 </command>
+   </button>
+   <button brief="P">
+    <name>rightclick</name>
+    <category>panel</category>
+    <icon>/home/roseba/Projects/MEDIA/ICONS/input-mouse-right.svg</icon>
+    <command>bash -c "/home/roseba/Projects/SOFT/BASH/clicking right"</command>
+   </button>
+   <button brief="P">
+    <name>email</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/emblems/emblem-mail.svg</icon>
+    <command>bash -c "xdotool type barrett.rose@gmail.com"</command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <button brief="P">
+    <name>cam</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/view-fullscreen.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers alt+ctrl+m' </command>
+   </button>
+   <button brief="P">
+    <name>alt4</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/window-close.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers alt+F4' </command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel category="key">
+  <items>
+   <button brief="P">
+    <name>xmlcomment</name>
+    <category>edit</category>
+    <display>&lt;!</display>
+    <command>bash -c 'xdotool key --clearmodifiers Home less exclam minus minus End minus minus greater '</command>
+   </button>
+   <button brief="P">
+    <name>ccomment</name>
+    <category>edit</category>
+    <display>//</display>
+    <command>bash -c 'xdotool key --clearmodifiers slash slash '</command>
+   </button>
+   <button brief="P">
+    <name>ccomment</name>
+    <category>edit</category>
+    <display>/*</display>
+    <command>bash -c 'xdotool key --clearmodifiers slash asterisk Return space Return asterisk slash '</command>
+   </button>
+   <button brief="P">
+    <name>this</name>
+    <category>key</category>
+    <display>t</display>
+    <command>bash -c "xdotool type 'this-$gt;'"</command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel category="key">
+  <items>
+   <button brief="P">
+    <name>lcb</name>
+    <category>key</category>
+    <display>{</display>
+    <command>bash -c "xdotool key --clearmodifiers braceleft"</command>
+   </button>
+   <button brief="P">
+    <name>rcb</name>
+    <category>key</category>
+    <display>}</display>
+    <command>bash -c "xdotool key --clearmodifiers braceright"</command>
+   </button>
+   <button brief="P">
+    <name>lt</name>
+    <category>key</category>
+    <display>&lt;</display>
+    <command>bash -c "xdotool key --clearmodifiers less"</command>
+   </button>
+   <button brief="P">
+    <name>gt</name>
+    <category>key</category>
+    <display>&gt;</display>
+    <command>bash -c "xdotool key --clearmodifiers greater"</command>
+   </button>
+   <button brief="P">
+    <name>bar</name>
+    <category>key</category>
+    <display>|</display>
+    <command>bash -c "xdotool key --clearmodifiers bar"</command>
+   </button>
+   <button brief="P">
+    <name>quest</name>
+    <category>key</category>
+    <display>?</display>
+    <command>bash -c "xdotool key --clearmodifiers question"</command>
+   </button>
+   <button brief="P">
+    <name>exclam</name>
+    <category>key</category>
+    <display>!</display>
+    <command>bash -c "xdotool key --clearmodifiers exclam"</command>
+   </button>
+   <button brief="P">
+    <name>pound</name>
+    <category>key</category>
+    <display>#</display>
+    <command>bash -c "xdotool key --clearmodifiers numbersign"</command>
+   </button>
+   <button brief="P">
+    <name>dol</name>
+    <category>key</category>
+    <display>$</display>
+    <command>bash -c "xdotool key --clearmodifiers dollar"</command>
+   </button>
+   <button brief="P">
+    <name>perc</name>
+    <category>key</category>
+    <display>%</display>
+    <command>bash -c "xdotool key --clearmodifiers percent"</command>
+   </button>
+   <button brief="P">
+    <name>pow</name>
+    <category>key</category>
+    <display>^</display>
+    <command>bash -c "xdotool key --clearmodifiers asciicircum"</command>
+   </button>
+   <button brief="P">
+    <name>amp</name>
+    <category>key</category>
+    <display>&amp;</display>
+    <command>bash -c "xdotool key --clearmodifiers ampersand"</command>
+   </button>
+   <button brief="P">
+    <name>ast</name>
+    <category>key</category>
+    <display>*</display>
+    <command>bash -c "xdotool key --clearmodifiers asterisk"</command>
+   </button>
+   <button brief="P">
+    <name>op</name>
+    <category>key</category>
+    <display>(</display>
+    <command>bash -c "xdotool key --clearmodifiers parenleft"</command>
+   </button>
+   <button brief="P">
+    <name>cp</name>
+    <category>key</category>
+    <display>)</display>
+    <command>bash -c "xdotool key --clearmodifiers parenright"</command>
+   </button>
+   <button brief="P">
+    <name>und</name>
+    <category>key</category>
+    <display>_</display>
+    <command>bash -c 'xdotool key --clearmodifiers underscore' </command>
+   </button>
+   <button brief="P">
+    <name>plus</name>
+    <category>key</category>
+    <display>+</display>
+    <command>bash -c "xdotool key --clearmodifiers plus"</command>
+   </button>
+   <button brief="P">
+    <name>colon</name>
+    <category>key</category>
+    <display>:</display>
+    <command>bash -c "xdotool key --clearmodifiers colon"</command>
+   </button>
+   <button brief="P">
+    <name>dq</name>
+    <category>key</category>
+    <display>"</display>
+    <command>bash -c "xdotool key --clearmodifiers quotedbl"</command>
+   </button>
+   <button brief="P">
+    <name>enter</name>
+    <category>key</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/dialog-ok.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Return' </command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <button brief="P">
+    <name>shm</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-first.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers shift+Home' </command>
+   </button>
+   <button brief="P">
+    <name>send</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-last.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers shift+End' </command>
+   </button>
+   <button brief="P">
+    <name>hom</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-top.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Page_Up' </command>
+   </button>
+   <button brief="P">
+    <name>l</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-previous.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Left' </command>
+   </button>
+   <button brief="P">
+    <name>pup</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-up.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Up' </command>
+   </button>
+   <button brief="P">
+    <name>pdn</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-down.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Down' </command>
+   </button>
+   <button brief="P">
+    <name>r</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-next.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Right' </command>
+   </button>
+   <button brief="P">
+    <name>end</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-bottom.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Page_Down' </command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <button brief="P">
+    <name>ctlw</name>
+    <category>panel</category>
+    <icon>/home/roseba/Projects/MEDIA/ICONS/272708_word_icon.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+w' </command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <button brief="P">
+    <name>ctlc</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/edit-copy.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+c' </command>
+   </button>
+   <button brief="P">
+    <name>ctlx</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/edit-cut.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+x' </command>
+   </button>
+   <button brief="P">
+    <name>ctlv</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/edit-paste.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+v' </command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>15</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <button brief="P">
+    <name>ctls</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/document-save.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+s' </command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel category="key">
+  <items>
+   <button brief="P">
+    <name>esc</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/application-exit.svg</icon>
+    <command>bash -c 'xdotool key -clearmodifiers Escape' </command>
+   </button>
+  </items>
+ </subpanel>
+</panel>

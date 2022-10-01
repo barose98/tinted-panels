@@ -1,41 +1,43 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+<xsl:template name="buttons_birthday">
 
-<subpanel>
+<subpanel  category="key">
 <items>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
     <display>TY</display>
-    <command>bash -c "xdotool type 'THANK YOU'"</command>
+    <command>bash -c "xdotool type 'THANK YOU @'"</command>
   </button>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
     <display>Ty</display>
-    <command>bash -c "xdotool type 'Thank You '"</command>
+    <command>bash -c "xdotool type 'Thank You @'"</command>
   </button>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
     <display>T</display>
-    <command>bash -c "xdotool type 'Thanks '"</command>
+    <command>bash -c "xdotool type 'Thanks @'"</command>
   </button>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
-    <display>c</display>
+    <display>,</display>
     <command>bash -c "xdotool type ', '"</command>
   </button>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
-    <display>p</display>
+    <display>.</display>
     <command>bash -c "xdotool type '. '"</command>
   </button>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
-    <display>b</display>
+    <display>bu</display>
     <command>bash -c "xdotool type 'buddy'"</command>
   </button>
   <button brief="P">
@@ -53,7 +55,7 @@
   <button brief="P">
     <name>TY</name>
     <category>key</category>
-    <display>w</display>
+    <display>hw</display>
     <command>bash -c "xdotool type 'I hope you are well. '"</command>
   </button>
   <button brief="P">
@@ -64,3 +66,8 @@
   </button>
 </items>
 </subpanel>
+</xsl:template>
+
+ </xsl:stylesheet>
+
+

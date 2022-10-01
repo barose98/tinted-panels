@@ -3,8 +3,8 @@
 
 <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
 
-<xsl:variable name="categories" select="document('categories.xml')"/>
-<xsl:variable name="colors" select="document('colors.xml')"/>
+<xsl:variable name="categories" select="document('../categories.xml')"/>
+<xsl:variable name="colors" select="document('../colors.xml')"/>
 <xsl:param name="side"/>
 <xsl:param name="orient"/>
 <!--<xsl:param name="size"/>-->

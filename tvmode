@@ -2,7 +2,7 @@
 #xdotool key 0xffec+d #super_r
 kills=0
 ps aux |grep tint2_ |awk '{print $2 " " $11 " "  $13 }' >ps
-   
+
 while read line;do
     la=( $(echo $line) )
     if [[ ${#la[@]} -eq 3 ]] ;then
@@ -11,7 +11,8 @@ while read line;do
 	pid=${la[0]}
 	
         if [[ $panel == "roku" ]] ;then
-	    echo $panel skipped # >>tvlog
+	    echo $panel skipped
+	    rokuskipped=true
 	else 
 	    #kill
 	    kill $pid
@@ -19,8 +20,9 @@ while read line;do
 	fi
     fi
 done <  ps
-#rm ps
+rm ps
 
+[[ -z $rokuskipped ]] && ./toggle_tint2 roku
 [[ $kills -gt 0 ]] && exit
 
 ./toggle_tint2 main

@@ -1,4 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+<xsl:template name="buttons_openttd">
 <subpanel>
 <items>
   <button brief="P">
@@ -6,7 +8,7 @@
     <category>openttd</category>
 <display> C</display>
 <!--    <icon>/usr/share/icons/HighContrast/scalable/actions/go-up.svg</icon>-->
-    <command>bash -c "sleep 2 &amp;&amp; xdotool  key --clearmodifiers c"</command>
+    <command>bash -c "sleep 2 <xsl:value-of select="$amp"/><xsl:value-of select="$amp"/> xdotool  key --clearmodifiers c"</command>
   </button>
 
    <button brief="P">
@@ -58,3 +60,8 @@
   </button>
 </items>
 </subpanel>
+</xsl:template>
+
+ </xsl:stylesheet>
+
+

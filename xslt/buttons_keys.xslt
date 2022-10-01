@@ -1,13 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+
+<xsl:template name="buttons_keys">
 <subpanel category="key">
   <items>
     
-  <button brief="P">
-    <name>this</name>
-    <category>key</category>
-    <display>t</display>
-    <command>bash -c "xdotool type 'this-&gt;'"</command>
-  </button>
   <button brief="P">
     <name>lcb</name>
     <category>key</category>
@@ -51,12 +48,13 @@
     <display>!</display>
     <command>bash -c "xdotool key --clearmodifiers exclam"</command>
   </button>
-  <button brief="P">
+<!--  <button brief="P">
     <name>at</name>
     <category>key</category>
     <display>@</display>
-    <command>bash -c "xdotool key --clearmodifiers at"</command>
+    <command>bash -c "xdotool key -clearmodifiers at"</command>
   </button>
+-->
   <button brief="P">
     <name>pound</name>
     <category>key</category>
@@ -132,9 +130,14 @@
   <button brief="P">
     <name>enter</name>
     <category>key</category>
-<icon>&CONTRAST;/actions/dialog-ok.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/dialog-ok.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers Return' </command>
   </button>
 
 </items>
 </subpanel>
+</xsl:template>
+
+ </xsl:stylesheet>
+
+

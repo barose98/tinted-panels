@@ -1,6 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+<xsl:template name="buttons_edit_emacs">
 <subpanel category="emacs">
 <items>
+  <button brief="P">
+    <name>del</name>
+    <category>panel</category>
+<display>del</display>
+    <command>bash -c 'xdotool key --clearmodifiers Delete' </command>
+  </button>
   <button brief="P">
     <name>ctlc</name>
     <category>panel</category>
@@ -34,3 +42,8 @@
 
 </items>
 </subpanel>
+</xsl:template>
+
+ </xsl:stylesheet>
+
+
