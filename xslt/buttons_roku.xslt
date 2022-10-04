@@ -7,7 +7,7 @@
   <button brief="P">
     <name>tvmode</name>
    <icon>/usr/share/icons/HighContrast/scalable/devices/camera-video.svg</icon>
-    <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/<xsl:value-of select="$PANELDIR"/> &amp;&amp; ./tvmode </command>
+    <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/<xsl:value-of select="$PANELDIR"/> &amp;&amp; ./tvmode <xsl:value-of select="$PANELNAME"/> </command>
   </button>
 
 <button brief="P">

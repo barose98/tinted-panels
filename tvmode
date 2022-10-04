@@ -10,9 +10,9 @@ while read line;do
 	procname=${la[1]}
 	pid=${la[0]}
 	
-        if [[ $panel == "roku" ]] ;then
+        if [[ $panel == $1 ]] ;then
 	    echo $panel skipped
-	    rokuskipped=true
+
 	else 
 	    #kill
 	    kill $pid
@@ -20,9 +20,8 @@ while read line;do
 	fi
     fi
 done <  ps
-rm ps
+#rm ps
 
-[[ -z $rokuskipped ]] && ./toggle_tint2 roku
 [[ $kills -gt 0 ]] && exit
 
 ./toggle_tint2 main
