@@ -48,13 +48,12 @@
     <display>!</display>
     <command>bash -c "xdotool key --clearmodifiers exclam"</command>
   </button>
-<!--  <button brief="P">
+  <button brief="P">
     <name>at</name>
     <category>key</category>
     <display>@</display>
     <command>bash -c "xdotool key -clearmodifiers at"</command>
   </button>
--->
   <button brief="P">
     <name>pound</name>
     <category>key</category>

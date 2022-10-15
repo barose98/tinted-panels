@@ -29,6 +29,12 @@
   </button>
   
   <button brief="P">
+    <name>cu</name>
+    <category>panel</category>
+    <display>cu</display>
+    <command>bash -c 'xdotool key -clearmodifiers ctrl+u' </command>
+  </button>
+  <button brief="P">
     <name>mexl</name>
     <category>panel</category>
 <display>m!</display>

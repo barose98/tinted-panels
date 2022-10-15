@@ -28,6 +28,12 @@
     <command>bash -c 'xdotool key --clearmodifiers Left' </command>
   </button>
   <button brief="P">
+    <name>r</name>
+    <category>panel</category>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/go-next.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Right' </command>
+  </button>
+  <button brief="P">
     <name>pup</name>
     <category>panel</category>
 <icon><xsl:value-of select="$CONTRAST"/>/actions/go-up.svg</icon>
@@ -40,12 +46,6 @@
     <command>bash -c 'xdotool key --clearmodifiers Down' </command>
   </button>
   
-  <button brief="P">
-    <name>r</name>
-    <category>panel</category>
-<icon><xsl:value-of select="$CONTRAST"/>/actions/go-next.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers Right' </command>
-  </button>
   
   <button brief="P">
     <name>end</name>

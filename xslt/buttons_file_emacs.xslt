@@ -19,9 +19,9 @@
     <name>cxr</name>
     <category>panel</category>
     <icon><xsl:value-of select="$CONTRAST"/>/actions/object-flip-horizontal.svg</icon>
-    <command>bash -c 'xdotool key -clearmodifiers ctrl+x braceright' </command>
+    <command>bash -c 'xdotool key -clearmodifiers ctrl+u 5 ctrl+x braceright' </command>
   </button>
-<!-- 
+<!--           
   <button brief="P">
     <name>cxl</name>
     <category>panel</category>
