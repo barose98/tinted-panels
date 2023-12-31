@@ -6,38 +6,38 @@
   <button brief="P">
     <name>del</name>
     <category>panel</category>
-<display>del</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/edit-clear.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers Delete' </command>
   </button>
   <button brief="P">
     <name>ctlc</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/edit-copy.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/edit-copy.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+w' </command>
   </button>
   <button brief="P">
     <name>ctlx</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/edit-cut.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/edit-cut.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+w' </command>
   </button>
   <button brief="P">
     <name>ctlv</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/edit-paste.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/edit-paste.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+y' </command>
   </button>
   <button brief="P">
     <name>dl</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/object-rotate-right.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/object-rotate-right.svg</icon>
 <command>bash -c 'xdotool key --clearmodifiers F5'</command>
   </button>
   <button brief="P">
     <name>undo</name>
     <category>panel</category>
-    <icon>/usr/share/icons/HighContrast/scalable/actions/document-revert.svg</icon> 
-    <command>bash -c 'xdotool key --clearmodifiers ctrl+0x002f'</command>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/document-revert.svg</icon> 
+    <command>bash -c 'xdotool key --clearmodifiers ctrl+slash'</command>
   </button>
 
 </items>

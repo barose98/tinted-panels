@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+xmlfile=/home/roseba/Projects/MEDIA/ICONS/EMOJ/EMOJI-BASH/buttons_emoji.xml 
+d=$(pwd)
+cd /home/roseba/Projects/MEDIA/ICONS/EMOJ/EMOJI-BASH/
+./refresh
+cd $d
+
+buttons=${xmlfile##*/}
+buttons=${buttons%%.*}
+echo $buttons
+cat >xslt/$buttons.xslt  <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
+
+<xsl:template name="$buttons">
+$(sed -n 's/##/<xsl:value-of select="\$/g;s/\;/"\/>/g;2,$ p' $xmlfile)
+</xsl:template>
+
+ </xsl:stylesheet>
+
+
+EOF

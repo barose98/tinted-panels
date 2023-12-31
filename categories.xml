@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <categories>
-<category name="panel" type="Panel" back="Navy" fore="Navy"/>
+<category name="panel" type="Panel" back="Navy" fore="White" border="Navy"/>
 <category name="emoji" type="Button" back="Navy" fore="White" font="Sans 24"/>
 <category name="other" type="Button" back="Orange" fore="Navy"  font="Open Sans Condensed 28"/>
 <category name="key" type="Button" back="Green" fore="White" font="Open Sans Condensed 28"/>

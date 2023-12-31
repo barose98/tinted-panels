@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sizes>
+  <panel name="main" vside="bottom" hside="left" orient="horizontal" size="100% 50"/>
+  <panel name="top" vside="top" hside="right" orient="horizontal" size="100% 40"/>
+  <panel name="keys" vside="top" hside="left" orient="horizontal" size="45% 40"/>
+  <panel name="roku" vside="top" hside="left" orient="horizontal" size="65% 40"/>
+  <panel name="roku2" vside="bottom" hside="right" orient="vertical" size="95% 40"/>
+  <panel name="emacs" vside="bottom" hside="left" orient="vertical" size="90% 40"/>
+  <panel name="emacs2" vside="bottom" hside="left" orient="vertical" size="90% 40"/>
+
+</sizes>

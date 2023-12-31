@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 dir=".rc"
 [[ -d $dir ]] || mkdir $dir
-panels=( )
-panels=( "Panel:" $(for p in xslt/panel_*; do p=${p##*_};p=${p%.*};echo -n " " $p;done ) )
 
-[[ -z $1 ]] && panel=$(zenity --entry --text  "${panels[@]}" --entry-text "") || panel=$1
-panelrc="$dir/tint2_${panel}.rc"
+[[ -z $1 ]] && panel=$(./panel-chooser) || panel=$1
 [[ -z $panel ]] && zenity --error --text "Panel Required" && exit
+panelrc="$dir/tint2_${panel}.rc"
 
 #./create-panel-xml $panel
 xalan -indent 1 -xsl "xslt/panel_$panel.xslt" -in "dummy.xml" -out "panels-xml/panel_$panel.xml"
 #xalan -indent 1 -xsl "xslt/panel_roku.xslt" -in "dummy.xml" -out "panels-xml/panel_$panel.xml"
-cat panels-xml/panel_$panel.xml
-xalan  -in "panels-xml/panel_$panel.xml" -xsl "xslt/create-tint2-panel.xslt" -out "$panelrc" 
+#cat panels-xml/panel_$panel.xml
+xalan  -in "panels-xml/panel_$panel.xml" -xsl "xslt/create-tint2-panel.xslt" -out "$panelrc"  -param "panelname" "'$panel'"
+cat $panelrc
 zenity --info  --timeout=2 --text "$panelrc"
 

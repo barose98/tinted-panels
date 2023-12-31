@@ -4,21 +4,16 @@
 <xsl:template name="roku_buttons">
 <subpanel category="roku" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40">
   <items>
-  <button brief="P">
-    <name>tvmode</name>
-   <icon>/usr/share/icons/HighContrast/scalable/devices/camera-video.svg</icon>
-    <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/<xsl:value-of select="$PANELDIR"/> &amp;&amp; ./tvmode <xsl:value-of select="$PANELNAME"/> </command>
-  </button>
 
-<button brief="P">
-   <name>RHOM</name>
-   <icon>/usr/share/icons/HighContrast/scalable/actions/go-home.svg</icon>
-   <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/Rokontroller &amp;&amp; ./keypress_tint home</command>
-</button>
 <button brief="P">
    <name>RPLA</name>
    <icon>/usr/share/icons/HighContrast/scalable/actions/media-playback-start.svg</icon>
    <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/Rokontroller &amp;&amp; ./keypress_tint play</command>
+</button>
+<button brief="P">
+   <name>RRPLA</name>
+   <icon>/usr/share/icons/HighContrast/scalable/actions/edit-undo.svg</icon>
+   <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/Rokontroller &amp;&amp; ./keypress_tint instantreplay</command>
 </button>
 <button brief="P">
    <name>RFFWD</name>

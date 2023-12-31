@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="97% 40" vside="top" hside="center" orient="horizontal">
- <subpanel>
+<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="75% 40" size2="100% 40" vside="top" hside="right" orient="horizontal">
+ <subpanel category="key">
   <items>
    <button brief="P">
-    <name>dxp</name>
-    <icon>/usr/share/icons/HighContrast/scalable/actions/list-add.svg</icon>
-    <command>cd /home/roseba/Projects/SOFT/BASH/tinted-panels$amp;$amp; ./toggle_tint2 top2 </command>
+    <name>togglekeys</name>
+    <icon>/usr/share/icons/HighContrast/scalable/devices/input-keyboard.svg</icon>
+    <command>./toggle_tint2 top</command>
    </button>
+  </items>
+ </subpanel>
+ <subpanel category="roku">
+  <items>
+   <button brief="P">
+    <name>rokontroller</name>
+    <category>panel</category>
+    <icon>/home/roseba/Projects/MEDIA/ICONS/remote.svg</icon>
+    <command>./toggle_tint2 roku</command>
+   </button>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
+   <separator brief=":">
+    <size>100</size>
+    <style>empty</style>
+   </separator>
+  </items>
+ </subpanel>
+ <subpanel>
+  <items>
    <button brief="P">
     <name>rightclick</name>
     <category>panel</category>
     <icon>/home/roseba/Projects/MEDIA/ICONS/input-mouse-right.svg</icon>
-    <command>bash -c "/home/roseba/Projects/SOFT/BASH/clicking right"</command>
+    <command>bash -c "/home/roseba/Projects/DEV/BASH/clicking right"</command>
    </button>
    <button brief="P">
     <name>email</name>
@@ -19,14 +41,6 @@
     <icon>/usr/share/icons/HighContrast/scalable/emblems/emblem-mail.svg</icon>
     <command>bash -c "xdotool type barrett.rose@gmail.com"</command>
    </button>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
   </items>
  </subpanel>
  <subpanel>
@@ -43,14 +57,6 @@
     <icon>/usr/share/icons/HighContrast/scalable/actions/window-close.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+F4' </command>
    </button>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
   </items>
  </subpanel>
  <subpanel category="key">
@@ -77,16 +83,8 @@
     <name>this</name>
     <category>key</category>
     <display>t</display>
-    <command>bash -c "xdotool type 'this-$gt;'"</command>
+    <command>bash -c "xdotool type 'this-&gt;'"</command>
    </button>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
   </items>
  </subpanel>
  <subpanel category="key">
@@ -132,6 +130,12 @@
     <category>key</category>
     <display>!</display>
     <command>bash -c "xdotool key --clearmodifiers exclam"</command>
+   </button>
+   <button brief="P">
+    <name>at</name>
+    <category>key</category>
+    <display>@</display>
+    <command>bash -c "xdotool key -clearmodifiers at"</command>
    </button>
    <button brief="P">
     <name>pound</name>
@@ -215,14 +219,11 @@
  </subpanel>
  <subpanel>
   <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
+   <button brief="P">
+    <name>RHOM</name>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-home.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Home' </command>
+   </button>
    <button brief="P">
     <name>shm</name>
     <category>panel</category>
@@ -248,6 +249,12 @@
     <command>bash -c 'xdotool key --clearmodifiers Left' </command>
    </button>
    <button brief="P">
+    <name>r</name>
+    <category>panel</category>
+    <icon>/usr/share/icons/HighContrast/scalable/actions/go-next.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Right' </command>
+   </button>
+   <button brief="P">
     <name>pup</name>
     <category>panel</category>
     <icon>/usr/share/icons/HighContrast/scalable/actions/go-up.svg</icon>
@@ -260,25 +267,11 @@
     <command>bash -c 'xdotool key --clearmodifiers Down' </command>
    </button>
    <button brief="P">
-    <name>r</name>
-    <category>panel</category>
-    <icon>/usr/share/icons/HighContrast/scalable/actions/go-next.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers Right' </command>
-   </button>
-   <button brief="P">
     <name>end</name>
     <category>panel</category>
     <icon>/usr/share/icons/HighContrast/scalable/actions/go-bottom.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers Page_Down' </command>
    </button>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
   </items>
  </subpanel>
  <subpanel>
@@ -293,19 +286,11 @@
  </subpanel>
  <subpanel>
   <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
    <button brief="P">
     <name>ctlc</name>
     <category>panel</category>
     <icon>/usr/share/icons/HighContrast/scalable/actions/edit-copy.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers ctrl+c' </command>
+    <command>bash -c 'xdotool key ctrl+c' </command>
    </button>
    <button brief="P">
     <name>ctlx</name>
@@ -317,16 +302,8 @@
     <name>ctlv</name>
     <category>panel</category>
     <icon>/usr/share/icons/HighContrast/scalable/actions/edit-paste.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers ctrl+v' </command>
+    <command>bash -c 'xdotool key  ctrl+v' </command>
    </button>
-  </items>
- </subpanel>
- <subpanel>
-  <items>
-   <separator brief=":">
-    <size>15</size>
-    <style>empty</style>
-   </separator>
   </items>
  </subpanel>
  <subpanel>
@@ -347,6 +324,7 @@
     <icon>/usr/share/icons/HighContrast/scalable/actions/application-exit.svg</icon>
     <command>bash -c 'xdotool key -clearmodifiers Escape' </command>
    </button>
+   <clock brief="C"/>
   </items>
  </subpanel>
 </panel>

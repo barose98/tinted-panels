@@ -1,6 +1,2 @@
 #!/usr/bin/env bash
-pkill -f tint2_
-./toggle_tint2 main
-./toggle_tint2 top
-
-exit 0
+killall -SIGUSR1 tint2

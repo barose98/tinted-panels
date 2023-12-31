@@ -2,7 +2,13 @@
 <xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
 <xsl:template name="buttons_cursor">
 <subpanel>
-<items>
+  <items>
+    
+<button brief="P">
+   <name>RHOM</name>
+   <icon>/usr/share/icons/HighContrast/scalable/actions/go-home.svg</icon>
+    <command>bash -c 'xdotool key --clearmodifiers Home' </command>
+</button>
   <button brief="P">
     <name>shm</name>
     <category>panel</category>

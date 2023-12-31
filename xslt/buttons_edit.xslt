@@ -7,7 +7,7 @@
     <name>ctlc</name>
     <category>panel</category>
 <icon><xsl:value-of select="$CONTRAST"/>/actions/edit-copy.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers ctrl+c' </command>
+    <command>bash -c 'xdotool key ctrl+c' </command>
   </button>
   <button brief="P">
     <name>ctlx</name>
@@ -19,7 +19,7 @@
     <name>ctlv</name>
     <category>panel</category>
 <icon><xsl:value-of select="$CONTRAST"/>/actions/edit-paste.svg</icon>
-    <command>bash -c 'xdotool key --clearmodifiers ctrl+v' </command>
+    <command>bash -c 'xdotool key  ctrl+v' </command>
   </button>
 <!--  <button brief="P">
     <name>dl</name>

@@ -24,7 +24,7 @@
   <button brief="P">
     <name>cg</name>
     <category>panel</category>
-    <display>cg</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/dialog-cancel.svg</icon>
     <command>bash -c 'xdotool key -clearmodifiers ctrl+g' </command>
   </button>
   
@@ -43,7 +43,8 @@
   <button brief="P">
     <name>mperc</name>
     <category>panel</category>
-<display>m%</display>
+<!--    <display>m%</display>-->
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/edit-find-replace.svg</icon>
     <command>bash -c 'xdotool key -clearmodifiers alt+percent' </command>
   </button>
   

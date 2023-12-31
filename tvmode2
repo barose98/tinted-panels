@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
-#xdotool key 0xffec+d #super_r
-pkill -f tint2_
-[[ -f tvm ]] || echo -n reg >tvm
-mode=$(cat tvm)
-[[ $mode == "reg"  ]] && echo -n tv >tvm && ./toggle_tint2 roku && ./toggle_tint2 dx
-[[ $mode == "tv"  ]] && echo -n reg >tvm && ./toggle_tint2 main && ./toggle_tint2 top
-
+count=$(pkill -f -c tint2_ )
+#zenity --info --text $count
+./toggle_tint2 roku
+[[ $count == 1  ]] &&  ./toggle_tint2 main  && ./toggle_tint2 top
 

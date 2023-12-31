@@ -8,13 +8,13 @@
   <button brief="P">
     <name>cam</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/view-fullscreen.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/view-fullscreen.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+ctrl+m' </command>
   </button>
   <button brief="P">
     <name>alt4</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/window-close.svg</icon>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/window-close.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+F4' </command>
   </button>
 <!--

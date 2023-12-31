@@ -38,7 +38,11 @@
    <icon>/usr/share/icons/HighContrast/scalable/actions/mail-reply-sender.svg</icon>
    <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/Rokontroller &amp;&amp; ./keypress_tint back</command>
 </button>
-
+<button brief="P">
+   <name>RHOM</name>
+   <icon>/usr/share/icons/HighContrast/scalable/actions/go-home.svg</icon>
+   <command>cd <xsl:value-of select="$PROJECTS"/>/<xsl:value-of select="$BASH"/>/Rokontroller &amp;&amp; ./keypress_tint home</command>
+</button>
 </items>
 </subpanel>
 </xsl:template>

@@ -6,50 +6,50 @@
 <button brief="P">
     <name>csp</name>
     <category>panel</category>
-    <display>cSp</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/insert-text.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+space' </command>
   </button>
 <button brief="P">
     <name>mb</name>
     <category>panel</category>
-    <display>mb</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/go-previous.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+b' </command>
   </button>
 <button brief="P">
     <name>mf</name>
     <category>panel</category>
-    <display>mf</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/go-next.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+f' </command>
 </button>
 
 <button brief="P">
     <name>hom</name>
     <category>panel</category>
-    <icon>/usr/share/icons/HighContrast/scalable/actions/go-first.svg</icon>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/go-first.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+a' </command>
   </button>
 <button brief="P">
     <name>end</name>
     <category>panel</category>
-<icon>/usr/share/icons/HighContrast/scalable/actions/go-last.svg</icon>
+<icon><xsl:value-of select="$CONTRAST"/>/actions/go-last.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers ctrl+e' </command>
   </button>
 <button brief="P">
     <name>mt</name>
     <category>panel</category>
-    <display>m&lt;</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/go-top.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+less' </command>
   </button>
 <button brief="P">
     <name>mb</name>
     <category>panel</category>
-    <display>m&gt;</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/go-bottom.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers alt+greater' </command>
   </button>
 <button brief="P">
 <name>cl</name>
 <category>panel</category>
-<display>cl</display>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/object-flip-vertical.svg</icon>
 <command>bash -c 'xdotool key --clearmodifiers ctrl+l' </command>
 </button>
 </items>

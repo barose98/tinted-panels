@@ -10,10 +10,10 @@ while read line;do
 	procname=${la[1]}
 	pid=${la[0]}
 	
-        if [[ $panel == $1 ]] ;then
-	    echo $panel skipped
+        if [[ $panel != $1 ]] ;then
+#	    echo $panel skipped
 
-	else 
+#	else 
 	    #kill
 	    kill $pid
 	    ((kills++))

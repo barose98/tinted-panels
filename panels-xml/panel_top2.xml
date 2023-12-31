@@ -54,11 +54,6 @@
  <subpanel category="roku" size="97% 40">
   <items>
    <button brief="P">
-    <name>tvmode</name>
-    <icon>/usr/share/icons/HighContrast/scalable/devices/camera-video.svg</icon>
-    <command>cd /home/roseba/Projects/SOFT/BASH/tinted-panels &amp;&amp; ./tvmode </command>
-   </button>
-   <button brief="P">
     <name>RHOM</name>
     <icon>/usr/share/icons/HighContrast/scalable/actions/go-home.svg</icon>
     <command>cd /home/roseba/Projects/SOFT/BASH/Rokontroller &amp;&amp; ./keypress_tint home</command>

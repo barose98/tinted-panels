@@ -129,10 +129,9 @@
   <button brief="P">
     <name>enter</name>
     <category>key</category>
-<icon><xsl:value-of select="$CONTRAST"/>/actions/dialog-ok.svg</icon>
+    <icon><xsl:value-of select="$CONTRAST"/>/actions/dialog-ok.svg</icon>
     <command>bash -c 'xdotool key --clearmodifiers Return' </command>
   </button>
-
 </items>
 </subpanel>
 </xsl:template>

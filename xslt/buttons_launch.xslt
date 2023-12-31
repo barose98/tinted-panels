@@ -8,22 +8,22 @@
    <category>panel</category>
    <display></display>
    <icon><xsl:value-of select="$CONTRAST"/>/apps/utilities-terminal.svg</icon>
-   <command>lxterminal --working-directory="/home/roseba"</command>
+   <command>qterminal --workdir="/home/roseba"</command>
 </button>
 <button brief="P">
    <name>pcm</name>
    <category>panel</category>
    <display></display>
    <icon><xsl:value-of select="$CONTRAST"/>/apps/system-file-manager.svg</icon>
-   <command>pcmanfm ~</command>
+   <command>pcmanfm-qt ~</command>
 </button>
 
 <button brief="P">
    <name></name>
    <category>panel</category>
    <display></display>
-   <icon>firefox</icon>
-   <command>xdg-open https://mail.google.com/mail/?ui=html</command>
+   <icon>google-chrome</icon>
+   <command>google-chrome https://mail.google.com</command>
 </button>
 </items>
 </subpanel>

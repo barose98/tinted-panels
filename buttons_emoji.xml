@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DO NOT EDIT DIRECTLY-->
+<subpanel category="emoji" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40">
+<items>
+
+<button brief="P">
+   <name>ebc</name>
+   <display>e</display>
+   <command>/home/roseba/Projects/MEDIA/ICONS/EMOJ/EMOJI-BASH/emoji-by-code</command>
+</button>
+</items>
+</subpanel>

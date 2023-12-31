@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+dir=".rc"
+[[ -d $dir ]] || mkdir $dir
+panels=( )
+panels=( "Panel:" $(for p in xslt/panel_*; do p=${p##*_};p=${p%.*};echo -n " " $p;done ) )
+
+panel=$(zenity --timeout 30 --entry --text  "${panels[@]}" --entry-text "") || panel=$1
+
+[[ -z $panel ]] && exit
+echo $panel

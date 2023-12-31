@@ -15,7 +15,14 @@
 </items>
 </subpanel>
 
+<!--<xsl:call-template name="buttons_birthday"/>-->
 <xsl:call-template name="buttons_extra_emacs"/>
+
+<xsl:call-template name="separator">
+  <xsl:with-param name="size">680</xsl:with-param>
+  <xsl:with-param name="style">empty</xsl:with-param>
+</xsl:call-template>
+
 </panel>
 </xsl:template>
 

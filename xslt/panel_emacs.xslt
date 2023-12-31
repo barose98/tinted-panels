@@ -20,6 +20,11 @@
 <xsl:call-template name="separator"/>
 <xsl:call-template name="buttons_file_emacs"/>
 
+<xsl:call-template name="separator">
+  <xsl:with-param name="size">150</xsl:with-param>
+  <xsl:with-param name="style">empty</xsl:with-param>
+</xsl:call-template>
+
 </panel>
 </xsl:template>
 

@@ -7,33 +7,16 @@
   <button brief="P">
     <name>TY</name>
     <category>key</category>
-    <display>TY</display>
-    <command>bash -c "xdotool type 'THANK YOU @'"</command>
-  </button>
-  <button brief="P">
-    <name>TY</name>
-    <category>key</category>
     <display>Ty</display>
-    <command>bash -c "xdotool type 'Thank You @'"</command>
+    <command>bash -c "xdotool type 'Thank You '"</command>
   </button>
   <button brief="P">
     <name>TY</name>
     <category>key</category>
     <display>T</display>
-    <command>bash -c "xdotool type 'Thanks @'"</command>
+    <command>bash -c "xdotool type 'Thanks '"</command>
   </button>
-  <button brief="P">
-    <name>TY</name>
-    <category>key</category>
-    <display>,</display>
-    <command>bash -c "xdotool type ', '"</command>
-  </button>
-  <button brief="P">
-    <name>TY</name>
-    <category>key</category>
-    <display>.</display>
-    <command>bash -c "xdotool type '. '"</command>
-  </button>
+
   <button brief="P">
     <name>TY</name>
     <category>key</category>

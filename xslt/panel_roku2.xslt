@@ -3,7 +3,7 @@
 <xsl:include href="variables.xslt"/>
 <xsl:template match="/">
 
-<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  size="97% 40" vside="center" hside="right" orient="vertical">
+<panel xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  >
 <subpanel category="">
 <items>
 
@@ -16,8 +16,16 @@
 </items>
 </subpanel>
 
+<!--<xsl:call-template name="roku_buttons_launch"/>-->
+<xsl:call-template name="roku_buttons_dx"/>
+<!--<xsl:call-template name="roku_buttons"/>-->
+<xsl:call-template name="separator"/>
 <xsl:call-template name="roku_buttons_launch"/>
 
+<xsl:call-template name="separator">
+  <xsl:with-param name="size">150</xsl:with-param>
+  <xsl:with-param name="style">empty</xsl:with-param>
+</xsl:call-template>
 </panel>
 </xsl:template>
 

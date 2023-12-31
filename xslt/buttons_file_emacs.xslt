@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
 <xsl:template name="buttons_file_emacs">
-<!--
-<!DOCTYPE doc [
-<!ENTITY CONTRAST "/usr/share/icons/HighContrast/scalable">
-]>
--->
+
 <subpanel category="emacs">
 <items>
   <button brief="P">

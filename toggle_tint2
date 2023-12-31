@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-p=${1:-main}
-pkill -f tint2_${p}.rc || tint2 -c "./.rc/tint2_${p}.rc" &
+[[ -n $1 ]] && p=$1 || p=$(./panel-chooser)
+[[ -z $p ]] && p="main"
+pkill -f tint2_${p}.rc || tint2 -c "./.rc/tint2_${p}.rc" >/dev/null &
+exit 0
 
